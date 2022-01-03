@@ -1,0 +1,36 @@
+edw:
+  outputs:
+    dev:
+      dataset: ia_feature_store
+      fixed_retries: 1
+      keyfile: /tmp/credentials_edw.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: edw-corp-bigquery-20211228-dev
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+  hml:
+    dataset: ia_feature_store
+    fixed_retries: 1
+    keyfile: /tmp/credentials_edw.json
+    location: US
+    method: service-account
+    priority: interactive
+    project: edw-corp-bigquery-20211228-hml
+    threads: 1
+    timeout_seconds: 300
+    type: bigquery
+  prd:
+    dataset: ia_feature_store
+    fixed_retries: 1
+    keyfile: /tmp/credentials_edw.json
+    location: US
+    method: service-account
+    priority: interactive
+    project: edw-corp-bigquery-20211228-prd
+    threads: 1
+    timeout_seconds: 300
+    type: bigquery
+  target: dev
